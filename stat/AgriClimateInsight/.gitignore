@@ -1,0 +1,59 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.env
+.venv/
+venv/
+ENV/
+env/
+
+# Packaging / build artifacts
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE / editor
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Jupyter
+.ipynb_checkpoints
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Streamlit local state
+.streamlit/
+
+# Secrets / credentials / config
+.env.*
+.env.local
+secrets.json
+credentials.json
+*.pem
+*.key
+
+# Logs
+*.log
+
+# Pyright / type check caches
+.mypy_cache/
+.dmypy.json
+
+# Other transient files
+*.swp
+*~ 
+~$*
