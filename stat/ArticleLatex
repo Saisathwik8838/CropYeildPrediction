@@ -1,0 +1,1165 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+
+\usepackage{amsmath, amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{url}
+\usepackage{hyperref}
+
+\begin{document}
+
+\title{Climate Change and Indian Agriculture: Impacts on Crop Yield}
+
+\author{
+\IEEEauthorblockN{Sai Sathwik Cheera}
+\IEEEauthorblockA{
+\textit{IIIT Dharwad}\\
+23bcs036@iiitdwd.ac.in}
+\and
+\IEEEauthorblockN{Dinesh B}
+\IEEEauthorblockA{
+\textit{IIIT Dharwad}\\
+23bcs027@iiitdwd.ac.in}
+\and
+\IEEEauthorblockN{Sai Rithvik}
+\IEEEauthorblockA{
+\textit{IIIT Dharwad}\\
+23bcs070@iiitdwd.ac.in}
+\and
+\IEEEauthorblockN{Sanjay Veda}
+\IEEEauthorblockA{
+\textit{IIIT Dharwad}\\
+23bcs069@iiitdwd.ac.in}
+}
+
+\maketitle
+
+\begin{abstract}
+This report presents a rigorous, 58-year (1961–2018) longitudinal analysis quantifying the secular trends and inter-annual variability of precipitation and temperature across India and their quantified impact on eight key agricultural commodities. The analysis establishes a dual climatic challenge: a systematic warming trend, particularly accelerated during the critical pre-monsoon (March–May) season, juxtaposed against persistent, high inter-annual volatility in monsoon rainfall (Coefficient of Variation of 10.04\%). The study demonstrates that while land allocation decisions are driven primarily by economic and policy factors, decoupling them from climatic suitability, severe biophysical constraints are emerging in sensitive sectors. Key vulnerabilities quantified include the acute negative correlation between Barley yield (a Rabi crop) and pre-monsoon temperature ($r = -0.52$), and the high monsoon dependency of Dry Beans (a rainfed Kharif pulse, $r = 0.48$). Furthermore, the stagnant yield profile of Apricots and its negative correlation with winter temperatures ($r = -0.15$) signals a critical threshold being crossed for high-chill horticulture. Policy recommendations emphasize climate-smart breeding for heat tolerance and water policy reform toward decentralized infrastructure to mitigate monsoon risk.
+\end{abstract}
+
+\section{Introduction}
+\subsection{Background and Context}
+India occupies a vital position in global agriculture, characterized by immense agro-climatic diversity, ranging from humid tropical zones in the south to temperate and alpine zones in the Himalayan region. With nearly 54\% of its total workforce dependent on agriculture and allied sectors, the stability of food production systems is inseparably linked to the country’s socioeconomic well-being. A unique feature of Indian agriculture is its profound dependence on seasonally driven climate systems, particularly the South Asian Monsoon, which contributes nearly 75–80\% of the annual rainfall in most regions.
+
+The monsoon not only dictates water availability but also determines cropping calendars, soil moisture balance, irrigation demand, and crop phenology. Even marginal deviations in monsoon onset, withdrawal, or intra-seasonal rainfall distribution can disrupt sowing patterns, reduce yields, and trigger widespread agrarian distress. This climatic sensitivity is further amplified by India’s large share of rainfed agriculture—approximately 52–55\% of cultivated land depends solely on rainfall.
+
+Given this backdrop, the study of climate variability becomes essential to understanding long-term agricultural resilience. This report provides a rigorous technical assessment of climate fluctuations and agricultural performance over 58 years (1961–2018), focusing on the statistical behavior of mean annual temperature, seasonal temperature cycles, and precipitation patterns. By analyzing secular warming trends, monsoon variability, and shifts in rainfall distribution, this study aims to provide an evidence-driven foundation for evaluating the biophysical constraints shaping India’s agricultural productivity trajectory.
+
+In addition to its direct impacts on crop growth, climate variability influences several indirect pathways that affect agricultural productivity. These include changes in soil moisture availability, increased evapotranspiration losses, higher irrigation demand, and altered pest and disease dynamics. Climate-induced disruptions in hydrological cycles also impact groundwater recharge, surface water storage, and river basin flows, which collectively shape the long-term sustainability of irrigation-dependent regions. Furthermore, climate change interacts with socioeconomic drivers such as farm size, access to irrigation, mechanization levels, and market stability, creating a complex matrix of risks that differ widely across agro-climatic zones.
+
+The interplay between biophysical and socioeconomic vulnerabilities makes India one of the most climate-sensitive agricultural systems in the world. Smallholder farmers, who constitute more than 85\% of India’s farming community, are particularly exposed due to limited financial buffers, inadequate access to climate-resilient technologies, and dependence on monsoon-driven farming cycles. As a result, understanding climate–agriculture linkages is not only essential for crop management but also critical for broader national priorities such as poverty reduction, food security, rural livelihoods, and economic stability. This underscores the urgent need for comprehensive, data-driven analyses such as the one presented in this study.
+
+\subsection{Review of Literature and Analytical Gaps}
+Existing literature on climate change and Indian agriculture reveals a broad consensus on the increasing vulnerability of major food systems. Numerous regional studies have quantified the impact of rising temperatures on crop yields, particularly wheat, rice, and pulses. Studies using crop simulation models (such as DSSAT, APSIM, and INFOCROP) report substantial reductions in yield potential under high-temperature scenarios, especially during critical growth stages like flowering and grain filling. Meanwhile, econometric studies using panel data and Ricardian frameworks have shown that even moderate increases in warming can lower net farm income, particularly in semi-arid and arid regions.
+
+Despite the large body of evidence, several analytical gaps persist. Most studies focus on short-term or region-specific datasets, limiting the ability to understand long-term climatic evolution on a national scale. Furthermore, limited research attempts to integrate multi-seasonal climatic parameters—winter chilling hours, pre-monsoon heating, monsoon rainfall variability, and post-monsoon moisture balance—into a unified framework assessing crop performance across diverse commodity classes.
+
+Another gap lies in the fragmented treatment of crop categories. Previous studies often focus on major cereals while overlooking horticultural crops, plantation crops, pulses, and temperate fruits, which respond differently to climatic stressors. High-chill fruits like Apricots and Apples require detailed analysis of winter temperatures, while rainfed pulses depend heavily on monsoon timing and rainfall spread. This paper addresses these gaps by synthesizing a comprehensive dataset covering eight distinct crops with varying climate sensitivities.
+
+In addition to dataset limitations, methodological inconsistencies across studies present another challenge. For instance, crop simulation models often omit farmer adaptation strategies such as altering sowing dates, modifying irrigation schedules, or switching crop varieties. On the other hand, econometric approaches may inadequately capture non-linear threshold effects, such as heat-induced sterility or rainfall-triggered waterlogging, which disproportionately affect crop yields. Studies frequently differ in temporal scales, spatial resolution, and variable selection, creating fragmented insights that are difficult to compare or synthesize into national-level assessments.
+
+The literature also highlights emerging but understudied areas, including:
+\begin{itemize}
+    \item the long-term decline in winter chill accumulation and its implications for temperate horticulture,
+    \item shifts in the monsoon onset window and their impact on Kharif cropping calendars,
+    \item changes in intra-seasonal rainfall distribution (dry spells and extreme rainfall events),
+    \item crop-specific physiological thresholds under rising vapor pressure deficit (VPD),
+    \item interactions between climate variables and pest–pathogen prevalence.
+\end{itemize}
+
+Overall, while the literature provides strong evidence of climate impacts on Indian agriculture, the absence of integrated, multi-decadal analyses represents a significant gap that this study seeks to fill.
+
+\subsection{Objectives and Analytical Scope}
+The central objective of this study is to build an integrated, long-duration analytical framework that captures the interactions between climate dynamics and agricultural productivity across India. Specifically, the study aims to:
+
+\begin{itemize}
+    \item \textbf{Quantify long-term climate trends:} This includes identifying secular warming patterns, studying seasonal temperature variations, and assessing inter-annual rainfall volatility, with emphasis on the South Asian Monsoon’s changing behavior.
+    
+    \item \textbf{Analyze agricultural performance over time:} By examining temporal trends in area harvested, yield, and total production for eight key crops—Apples, Apricots, Areca Nuts, Bananas, Barley, Dry Beans, Green Beans, and Cabbages—the study evaluates how agricultural systems have evolved under combined climatic and socioeconomic pressures.
+    
+    \item \textbf{Establish climate–yield relationships:} Using correlation matrices and regression-based approaches, the study determines the extent to which seasonal climate indicators (rainfall distribution, temperature anomalies, warming during critical seasons, etc.) influence crop yield performance.
+    
+    \item \textbf{Highlight emerging vulnerabilities:} Particular focus is given to high-risk sectors, such as rainfed pulses (Dry Beans), temperate horticulture (Apricots, Apples), and Rabi cereals (Barley), which face physiological thresholds under rising temperatures.
+    
+    \item \textbf{Bridge scientific and policy perspectives:} By linking empirical evidence with policy-relevant insights, the study contributes to ongoing discussions on climate-smart agriculture, water resource management, and crop diversification strategies.
+\end{itemize}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{graph_Generated_Image_3sjane3sjane3sja.png}
+    \caption{Temparature}
+    \label{fig:placeholder}
+\end{figure}
+
+Overall, the analytical scope combines climatic time-series analysis, agricultural trend evaluation, and crop-specific sensitivity modelling into a unified assessment aimed at informing research, policy, and adaptation planning.
+
+In addition to these core objectives, the study also aims to contribute to broader scientific and policy discussions by:
+\begin{itemize}
+    \item providing multi-decadal insights that can support climate-smart agricultural planning,
+    \item identifying region-specific vulnerabilities that may require targeted adaptation measures,
+    \item developing a foundation for integrating future climate projections (RCP/SSP scenarios) into crop planning,
+    \item offering a methodological blueprint for researchers conducting multi-variable climate–agriculture assessments,
+    \item helping policymakers prioritize resources in vulnerable sectors such as rainfed agriculture and temperate horticulture.
+\end{itemize}
+
+By addressing these elements, the study aspires to strengthen national strategies aimed at enhancing agricultural sustainability in a rapidly changing climate.
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{graph_Generated_Image_75zyd075zyd075zy.png}
+    \caption{RainFall}
+    \label{fig:placeholder}
+\end{figure}
+\section{Literature Review}
+
+\subsection{Synthesis of Research on Climate Change Impacts on Indian Crop Yields}
+
+A substantial body of scientific and economic literature has examined the impacts of climate change on Indian agriculture, and a consistent finding emerges: climate change poses a significant net negative threat to crop productivity and farm profitability. Rising temperatures, altered monsoon patterns, and increased frequency of climatic extremes are shown to outweigh any temporary or marginal benefits associated with elevated CO$_2$ fertilization. The intensity and direction of these impacts, however, vary across regions, crop types, and methodological approaches, resulting in substantial heterogeneity in empirical estimates.
+
+Multiple studies highlight that India, being a tropical, low-latitude agricultural system, is particularly vulnerable because many crops already operate close to their upper temperature tolerance thresholds. As temperatures rise beyond critical physiological limits—especially during flowering, pollination, and grain-filling stages—yield declines become both abrupt and irreversible. This risk is amplified in rainfed areas, which constitute more than half of India's cultivated land, where climate variability directly translates to production variability.
+
+Additional literature notes that climate change affects not only crop yields but also broader agricultural systems. For example, elevated night-time temperatures reduce the duration of grain-filling in cereals, while higher minimum temperatures alter pest and pathogen prevalence. Similarly, warming in high-altitude and temperate regions disrupts chill-hour accumulation, directly impacting the fruit set of Apples, Apricots, and other temperate horticultural crops. Research also indicates that increased vapor pressure deficit (VPD) under warming conditions accelerates evapotranspiration and exacerbates water stress, even when rainfall remains constant.
+
+Moreover, several studies highlight that climate impacts interact with socioeconomic vulnerabilities. Smallholder farmers with limited irrigation access, lower input use, and restricted financial capacity face disproportionate productivity losses. This makes climate change not only a biophysical challenge but also a socioeconomic one, potentially widening inequality between irrigated and rainfed regions. Collectively, the literature underscores the urgent need for climate-resilient agricultural strategies and improved management of water resources.
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{graph_Generated_Image_23f19823f19823f1.png}
+    \caption{Change of area Harvested}
+    \label{fig:placeholder}
+\end{figure}
+
+\subsection{Methodological Approaches and Reconciliation}
+
+The diverse findings in the literature stem from two broad methodological traditions, each with distinct strengths and limitations.
+
+\subsubsection{Agronomic and Crop Simulation Models}
+Crop simulation models such as DSSAT, APSIM, and INFOCROP have been widely used to estimate yield responses to temperature, rainfall, and CO$_2$ concentration changes. These models function by isolating direct biophysical responses (e.g., heat stress, water deficits) from other socioeconomic influences.  
+Key advantages include:
+\begin{itemize}
+    \item Ability to simulate physiological responses under controlled scenarios.
+    \item Capability to explore future climate projections (RCPs, SSPs).
+    \item Fine resolution of crop processes such as photosynthesis and transpiration.
+\end{itemize}
+
+However, a major criticism is that simulation models often overestimate damages because they typically do not incorporate farmer adaptation behaviors such as shifting sowing dates, altering crop varieties, using supplemental irrigation, or adjusting fertilizer applications. Another limitation is their sensitivity to input parameters—errors in soil characterisation or climate projections can significantly alter model outcomes.
+
+\subsubsection{Observational and Economic Approaches}
+Observational studies rely on historical, real-world data and include regression-based methods, Ricardian models, and panel data approaches. They implicitly capture existing adaptation strategies, making them more reflective of actual farm responses.  
+Notable frameworks include:
+\begin{itemize}
+    \item \textbf{Ricardian models:} Estimate the impact of climate on land values and farm profits.
+    \item \textbf{Panel data regressions:} Control for unobserved heterogeneity across districts and time.
+    \item \textbf{Quantile regression (QR):} Captures heterogeneous effects across yield distributions (Barnwal \& Kotani, 2013).
+\end{itemize}
+
+Yet, these models may underestimate long-term damages because observed data reflects only short-term or incremental climatic variations—not the more extreme changes predicted for the coming decades. Additionally, observational approaches struggle to detect impacts of rarely occurring but high-impact extreme climatic events, such as severe droughts or heatwaves, due to limited event frequency.
+
+\subsubsection{Reconciliation}
+The true climate impact likely lies between:
+\begin{itemize}
+    \item the pessimistic upper-bound predictions of non-adaptive simulation models, and  
+    \item the conservative lower-bound estimates of observational studies that account only for existing adaptation.
+\end{itemize}
+
+Recent literature attempts to reconcile these approaches by combining crop models with econometric frameworks or integrating machine learning models capable of capturing non-linear climate–yield relationships. Hybrid models emphasize the need for more robust, cross-disciplinary approaches that account for both plant-level physiological responses and farmer-level behavioral adaptations.
+
+\subsection{Empirical Findings on Impacts}
+
+A wide range of empirical studies demonstrates that climate change has already begun reducing yields of key Indian crops. Major findings include:
+
+\subsubsection{Temperature Effects}
+Higher maximum temperatures, especially during reproductive stages, significantly reduce yields of wheat, barley, pulses, and temperate fruits. Heat waves during March–April have been shown to cause irreversible crop losses of up to 10–20\% in North Indian wheat belts. Heat-induced pollen sterility, reduced grain-filling duration, and accelerated evaporation are among the primary physiological mechanisms driving yield decline.
+
+\subsubsection{Rainfall Variability}
+Shifts in monsoon onset, early-season dry spells, and erratic rainfall distribution intensify risks for rainfed crops such as Dry Beans, soybean, groundnut, and coarse cereals. Crop failures often result from:
+\begin{itemize}
+    \item delayed monsoon onset,
+    \item long dry spells between rainfall events,
+    \item excessive rainfall during flowering.
+\end{itemize}
+
+Rainfed districts in central and western India are found to be particularly vulnerable due to high rainfall dependency and low irrigation penetration. In addition, studies show that even years with normal total rainfall may experience poor yields if rainfall is unevenly distributed, highlighting the increasing importance of rainfall “pattern” over rainfall “quantity.”
+
+\subsubsection{Aggregate Impacts on Net Revenue}
+National-level economic studies estimate:
+\begin{itemize}
+    \item An 8.4\% decline in total farm net revenue under moderate warming scenarios.
+    \item Annual economic damages ranging from 4\% to 26\% of agricultural GDP by the end of the century.
+\end{itemize}
+These losses disproportionately affect smallholder and marginal farmers, who have limited adaptive capacity. Climate change therefore poses both agronomic and economic challenges, with implications for national food security and rural income stability.
+
+\subsection{Long-Term Projections and Loss Estimates}
+Without substantial adaptation, long-term projections show:
+\begin{itemize}
+    \item yield reductions of up to 25\% for major cereals,
+    \item drastic decline in high-chill horticultural crops such as Apples and Apricots,
+    \item increased year-to-year instability in pulses and oilseeds,
+    \item significant reduction in crop water productivity.
+\end{itemize}
+
+Ensemble climate models suggest that the frequency of extreme heat days could double by 2050, severely constraining Rabi crop productivity. Moreover, studies project that regions currently considered suitable for temperate fruit cultivation may undergo upward altitudinal shifts of 300–600 meters, forcing farmers in lower-altitude zones to transition to low-chill varieties or entirely different crops. These projected losses emphasize the urgent need for climate-smart adaptation and long-term crop planning.
+
+\subsection{Policy Implications and Research Gaps}
+
+\subsubsection{Need for Localized and Integrated Adaptation}
+Given India’s vast agro-ecological diversity, climate impacts are highly spatially heterogeneous. As such, policy interventions must be region-specific rather than uniform. Current government initiatives—such as the National Mission for Sustainable Agriculture (NMSA), National Innovations in Climate-Resilient Agriculture (NICRA), and the Pradhan Mantri Fasal Bima Yojana (PMFBY)—have made progress but remain insufficient in reach and scale.
+
+\subsubsection{Adaptation Strategies Identified in Literature}
+Effective on-farm adaptation practices include:
+\begin{itemize}
+    \item adjusting planting dates,
+    \item adopting heat- and drought-resistant crop varieties,
+    \item micro-irrigation and water harvesting,
+    \item integrated nutrient and pest management,
+    \item crop diversification toward less climate-sensitive crops.
+\end{itemize}
+
+Newer studies also emphasize the role of:
+\begin{itemize}
+    \item digital agriculture and climate advisories,
+    \item precision irrigation and fertigation,
+    \item IoT-based microclimate monitoring,
+    \item remote sensing for crop stress detection.
+\end{itemize}
+
+\subsubsection{Persistent Gaps}
+The biggest barrier is the limited institutional, financial, and technical support available to smallholder farmers. Studies highlight that:
+\begin{itemize}
+    \item adaptation awareness is low,
+    \item access to credit and insurance remains inadequate,
+    \item adoption of climate-resilient technologies is slow,
+    \item market linkages for diversified crops are weak.
+\end{itemize}
+
+Furthermore, there is a lack of long-term, high-resolution climate data at district and sub-district levels, making localized planning difficult. Limited integration between climate science, agronomy, and rural economics restricts the development of holistic adaptation frameworks.
+
+\subsubsection{Future Research Agenda}
+Researchers emphasize the need to shift from broad national analyses to:
+\begin{itemize}
+    \item granular district-level studies,
+    \item high-resolution climate modeling,
+    \item interdisciplinary assessments combining agronomy, remote sensing, and economics,
+    \item real-time monitoring using satellite and IoT data,
+    \item evaluating adaptation costs and farmer willingness.
+\end{itemize}
+
+Future research must also explore:
+\begin{itemize}
+    \item non-linear climate–yield relationships using machine learning models,
+    \item socio-behavioral factors influencing adaptation,
+    \item climate impacts on soil health, nutrient cycling, and groundwater recharge,
+    \item policy effectiveness under different climate scenarios.
+\end{itemize}
+
+These steps are essential to design actionable, farmer-centric climate adaptation policies for India.
+
+\subsection{Data Acquisition and Synchronization}
+Climatic data utilized for this analysis comprises monthly rainfall time series and seasonal temperature records spanning the 58 years from 1961 to 2018. Agricultural data—Area Harvested (ha), Yield (hg/ha), and Production (tonnes)—were extracted from FAOSTAT for Apples, Apricots, Areca Nuts, Bananas, Barley, Dry Beans, Green Beans, and Cabbages.
+
+To ensure comparability, datasets were standardized and synchronized across common temporal and spatial coordinates. Seasonal aggregation was performed to reflect agriculturally meaningful climate windows:
+\begin{itemize}
+    \item Winter (JAN–FEB): Important for temperate fruit chilling requirements.
+    \item Pre-Monsoon (MAR–MAY): Critical for heat stress analysis in Rabi crops.
+    \item Monsoon (JUN–SEP): Dominant season for rainfall-dependent Kharif crops.
+    \item Post-Monsoon (OCT–DEC): Key for secondary crop cycles and soil moisture recovery.
+\end{itemize}
+
+Yield data were converted from hectograms per hectare (hg/ha) to kilograms per hectare (kg/ha) for clarity (1 hg/ha = 0.1 kg/ha).
+
+\subsection{Statistical Methods Employed}
+While most agricultural data were classified as “Official,” some crop estimates—particularly Apricots and Green Beans—contained FAO-estimated or imputed values. These were carefully annotated to prevent misinterpretation. Despite minor gaps, the long-term continuity and breadth of the dataset strengthened time-series reliability.
+
+Statistical analyses included:
+\begin{itemize}
+    \item descriptive statistics and coefficient of variation (CV),
+    \item long-term trend analysis,
+    \item Pearson correlation coefficient modeling,
+    \item climate–yield sensitivity assessment,
+    \item cross-variable pattern identification.
+\end{itemize}
+
+Collectively, these statistical tools provided a robust foundation for evaluating climate–agriculture interactions with high temporal resolution.
+
+
+\section{Long-Term Climatic Trends (1961–2018)}
+
+The analysis of the 58-year climatic time series reveals a robust and statistically significant pattern of steadily rising temperatures paired with persistent volatility in rainfall distribution across India. This dual climatic burden—systemic warming and unstable precipitation—creates an increasingly complex planning environment for Indian agriculture. The long-term dataset enables a clearer visualization of these shifts, showing how subtle but consistent temperature increases and erratic monsoon behavior together destabilize crop performance and influence agricultural decision-making.
+
+Long-term climatic changes must also be understood in the context of India's geographic diversity. The country spans multiple agro-climatic regions, ranging from the cold Himalayan belt to humid tropical regions, semi-arid plateaus, and coastal monsoon-dominated zones. Consequently, the same incremental change in mean temperature or rainfall can translate into drastically different impacts across regions. A $1^\circ\text{C}$ temperature rise in the Indo-Gangetic Plains can push wheat crops beyond their heat tolerance threshold, whereas the same increase in the Western Ghats may affect evapotranspiration and soil moisture regimes in plantation crops. Thus, long-term climatic trends interact with regional sensitivities, creating spatially heterogeneous agricultural risks.
+
+\subsection{Temperature Trend Analysis}
+
+Over the observation period, the overall annual temperature has exhibited a clear and monotonic upward trajectory.\footnote{Data Source: FAO Climate Indicators, 1961–2018.} Annual average temperatures increased from approximately $24.00^\circ\text{C}$ in 1961 to $25.09^\circ\text{C}$ in 2018, marking a rise of more than $1^\circ\text{C}$ over six decades. Although this increase may appear modest at first glance, such seemingly small shifts in mean annual temperature translate into dramatic changes in the frequency, duration, and intensity of extreme heat events.
+
+In tropical agrarian systems such as India, crops often function close to their upper thermal tolerance limits. Therefore, even minor warming leads to:
+\begin{itemize}
+    \item thermal stress during reproductive stages,
+    \item reduced grain-filling periods,
+    \item lower photosynthetic efficiency,
+    \item increased crop water requirements.
+\end{itemize}
+
+A deeper seasonal decomposition reveals that the pre-monsoon season (March–May) has undergone the most accelerated warming. This period is critically important for Rabi crops such as Barley and Wheat, which complete their grain-filling stages during these months. Mean pre-monsoon temperatures increased sharply from historical baselines, with peaks such as $28.86^\circ\text{C}$ recorded in 2016. This corresponds to multiple heatwave events that impose severe physiological stress on crops by:
+\begin{itemize}
+    \item increasing evapotranspiration demand,
+    \item accelerating crop maturation (reducing grain size),
+    \item causing pollen sterility and reduced fruit set,
+    \item increasing water requirements in regions with limited irrigation access.
+\end{itemize}
+
+Recent research highlights that warming during nighttime is particularly harmful. Elevated minimum temperatures disproportionately affect grain setting in cereals and fruit development in horticultural crops by reducing the duration of cool hours necessary for metabolic recovery. Similarly, high nighttime temperatures in the Indo-Gangetic plains have been linked to accelerated soil respiration, thereby lowering soil organic carbon and long-term soil fertility.
+
+The relative stability of temperature over the entire timeframe, shown by a low Coefficient of Variation (CV) of approximately $1.44\%$, indicates that these changes are not random or episodic fluctuations. Instead, they represent a consistent and directional warming trend driven by long-term climatic forcing. This systemic warming has resulted in:
+\begin{itemize}
+    \item more frequent exceedance of critical crop thresholds (e.g., $>30^\circ\text{C}$ during anthesis),
+    \item shortened growing seasons in both Rabi and Kharif cycles,
+    \item expansion of “hotspot zones” particularly in Northwest and Central India.
+\end{itemize}
+
+Additionally, warming trends show a strengthening pattern after the 1990s, consistent with global warming acceleration linked to anthropogenic greenhouse gas emissions. The Indo-Gangetic plains, peninsular interior, and central India report the steepest temperature rises. These localized hotspots correlate strongly with observed productivity declines in several climate-sensitive crops.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{graph Image Nov 29, 2025, 07_45_47 PM.png}
+    \caption{Temperature Trend Analysis}
+    \label{fig:placeholder}
+\end{figure}
+
+\subsection{Precipitation Variability and Monsoon Dynamics}
+
+Contrary to the relatively steady increase in temperature, India's precipitation regime displays considerable year-to-year instability. Annual rainfall totals ranged from as low as $947.1 \text{mm}$ during the severe drought of 1972 to as high as $1401.4 \text{mm}$ in 1990. Despite a long-term mean of $1176.6 \text{mm}$, the Coefficient of Variation of $9.23\%$ indicates frequent and substantial deviations from this average.
+
+The monsoon season (June–September) dominates India’s rainfall, contributing nearly 75\% of the total annual precipitation. The monsoon itself exhibits high inter-annual variability (IAV), with a CV of $10.04\%$. This makes it the single largest climatic risk factor for rainfed agriculture, which accounts for more than 52\% of India's cultivated area.
+
+Monsoon variability is driven by a complex interplay of global and regional atmospheric systems, such as:
+\begin{itemize}
+    \item El Niño–Southern Oscillation (ENSO),
+    \item Indian Ocean Dipole (IOD),
+    \item Madden–Julian Oscillation (MJO),
+    \item Himalayan snow cover extent,
+    \item shifts in the monsoon trough,
+    \item warming of the Indian Ocean basin.
+\end{itemize}
+
+In many years, India's monsoon rainfall anomalies coincide with the warm phase of ENSO, which suppresses convection over the Indian subcontinent. Conversely, positive IOD years often enhance monsoon rainfall. The increasing frequency of extreme ENSO events has partly contributed to India's heightened rainfall instability.
+
+Key observations from the dataset include:
+\begin{itemize}
+    \item \textbf{Drought Years:} The lowest monsoon rainfall ($674.3 \text{mm}$ in 1972) coincides with one of the worst agricultural droughts in Indian history.
+    \item \textbf{Excess Rainfall Years:} Periods like 1961 recorded high monsoon rainfall ($1052.0 \text{mm}$), leading to localized flooding and crop waterlogging stress.
+    \item \textbf{Increasing Intra-Seasonal Variability:} Despite maintaining high annual rainfall in some years, rainfall distribution within the monsoon is becoming increasingly erratic—short but intense rainfall events coupled with prolonged dry spells.
+\end{itemize}
+
+The temporal distribution of rainfall is now more critical than the total rainfall volume. For rainfed crop systems—particularly pulses, oilseeds, and coarse cereals—the success of the cropping season depends on:
+\begin{itemize}
+    \item timely onset of monsoon,
+    \item adequate rainfall during sowing windows (first 30 days),
+    \item avoidance of dry spells during early vegetative growth,
+    \item stable moisture during flowering and pod formation.
+\end{itemize}
+
+Newer studies also highlight changes in monsoon onset and withdrawal dates. Delayed onset disrupts sowing for Kharif crops, while early withdrawal shortens the moisture availability window. Additionally, extreme rainfall events—defined as events exceeding 100 mm/day—have increased in frequency due to atmospheric moisture buildup in a warming climate. These events cause soil erosion, nutrient loss, and crop lodging, thereby reducing yield even in years with “normal” rainfall totals.
+
+\subsection{C. Summary Statistics for Key Climate Variables}
+
+Table I provides a comprehensive summary of the descriptive statistics for temperature and rainfall, highlighting the contrasting patterns—temperature exhibits high stability but strong upward drift, whereas rainfall exhibits low stability but no clear long-term increasing trend.
+
+This divergence underscores two important climatic realities:
+\begin{itemize}
+    \item \textbf{Temperature change is directional and systemic}, producing chronic stress across seasons.
+    \item \textbf{Rainfall change is volatile and episodic}, producing acute climatic shocks.
+\end{itemize}
+
+These patterns reveal why Indian agriculture faces simultaneous challenges of:
+\begin{itemize}
+    \item long-term heat stress,
+    \item short-term rainfall uncertainty,
+    \item reduced predictability of crop-water requirements,
+    \item increased irrigation dependency,
+    \item frequent extreme-weather-related crop failures.
+\end{itemize}
+
+These findings reinforce the dual climatic challenge that India faces: warming temperatures that create chronic stress across multiple seasons, and unpredictable rainfall patterns that produce acute shocks, especially for rainfed Kharif crops.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{Screenshot 2025-11-13 213539.png}
+    \caption{Summary Statistics for Key Climate Variables (1961–2018)}
+    \label{fig:placeholder}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{graph Image Nov 29, 2025, 07_55_40 PM.png}
+    \caption{Rainfall Patterns Over Time}
+    \label{fig:placeholder}
+\end{figure}
+\section{Agricultural Productivity Dynamics}
+
+The assessment of agricultural performance over nearly six decades reveals major structural transitions in land use, crop intensification, technological innovation, and climate-linked constraints. These changes reflect the combined influence of economic incentives, policy interventions, climatic risks, and biophysical limitations. The long-term dataset illustrates how India’s agricultural sector has simultaneously experienced modernization and vulnerability, with certain segments benefiting from technological adoption and others facing stagnation due to environmental stressors.
+
+Overall, agricultural productivity in India has undergone a process of diversification, intensification, and climate-induced realignment. While high-value horticulture and plantation crops have benefited from improved technologies, policy support, and higher market demand, many traditional cereals and temperate horticultural crops face emerging biophysical constraints linked to systemic warming and rainfall variability. This makes agricultural productivity dynamics a compelling case study of how economic forces intersect with ecological realities to reshape a nation’s crop landscape.
+
+\subsection{Area Harvested Trends: Intensification vs. Displacement}
+
+A notable divergence in area harvested emerges across crop categories, driven primarily by economic attractiveness, market demand, technological feasibility, and climatic suitability. While some crops expand due to strong value chains and assured markets, other crops decline due to lower returns, climatic vulnerability, or shifts in dietary preferences.
+
+This divergence reflects four major structural forces:
+
+\begin{itemize}
+    \item \textbf{Economic incentives:} Price stability, export opportunities, and domestic consumption patterns strongly influence cropping choices.
+    \item \textbf{Policy frameworks:} Government procurement (MSP), subsidies, irrigation investments, and horticulture mission programs shape crop geography.
+    \item \textbf{Technological breakthroughs:} Tissue culture, micro-irrigation, protected cultivation, and high-density orchards enable expansion of high-value crops.
+    \item \textbf{Climate sensitivity:} Crops dependent on winter chill or uniform monsoon rainfall contract in regions affected by warming and rainfall volatility.
+\end{itemize}
+
+\textbf{High-Value Expansion:}  
+Bananas expanded dramatically—from $165,000$ ha in 1961 to $884,000$ ha in 2018—representing a nearly 5.3-fold increase. This rapid growth was largely facilitated by:
+
+\begin{itemize}
+    \item increased domestic consumption and export demand,
+    \item development of tissue-cultured planting material that ensures uniformity,
+    \item widespread adoption of drip irrigation in southern and western India,
+    \item climate resilience due to banana’s tolerance to a broad temperature range,
+    \item expansion of cold storage, ripening chambers, and modern supply chain systems.
+\end{itemize}
+
+These factors collectively allowed bananas to outperform climate-sensitive cereals and pulses, even during years of monsoon failure. The crop’s perennial nature and irrigation reliance enable productivity stability even under variable rainfall.
+
+Areca Nut cultivation followed a similar trajectory, increasing from $135,000$ ha to $497,000$ ha. The expansion reflects strong demand in the processed and value-added markets (pan masala, supari), as well as the crop’s high profitability for smallholder farmers in humid coastal and sub-humid regions. Moreover, Areca Nut thrives in regions where monsoon rainfall remains reliable, making it less exposed to climatic volatility compared to rainfed pulses and oilseeds.
+
+\textbf{Staple Crop Contraction:}  
+Conversely, Barley experienced a dramatic reduction in area harvested—from 3.205 million ha in 1961 to just 0.66 million ha in 2018. The decline stems from:
+
+\begin{itemize}
+    \item substitution by more profitable cereals (rice, wheat),
+    \item government procurement policies that incentivize wheat and rice,
+    \item reduced demand for barley as traditional consumption patterns shift,
+    \item expansion of irrigated wheat in former barley-growing belts,
+    \item climate-driven changes reducing barley’s relative advantage as a cool-season crop.
+\end{itemize}
+
+Barley’s contraction is primarily economic, but climate change reinforces this decline. Rising winter temperatures and increased frequency of early heat events reduce barley yields and shorten its growing window. This makes barley increasingly less competitive compared to modern high-yielding wheat varieties, especially in Northwest India.
+
+\subsection{Production and Yield Performance}
+
+\subsubsection{B.1. High-Growth Sectors}
+
+The horticulture sector has emerged as one of the fastest-growing segments of Indian agriculture. Bananas, in particular, exemplify successful intensification and technological advancement. Production surged from 2.257 million tonnes in 1961 to 30.808 million tonnes in 2018—a thirteen-fold increase. This growth was supported by a significant rise in yield from $136,788$ hg/ha to $348,507$ hg/ha.
+
+Key enablers include:
+
+\begin{itemize}
+    \item high-density planting systems,
+    \item fertigation and micronutrient management,
+    \item improved post-harvest handling and refrigerated transport,
+    \item resilience to seasonal climate fluctuations due to controlled irrigation,
+    \item private-sector involvement in propagation and marketing.
+\end{itemize}
+
+Bananas also benefit from strong domestic consumption, year-round market demand, and export potential. The crop’s ability to withstand moderate climatic stress makes it relatively climate-resilient compared to pulses or temperate fruits.
+
+Apples likewise exhibited strong growth, with production rising from 185,000 tonnes to 2.327 million tonnes. Much of this increase is attributed to:
+
+\begin{itemize}
+    \item expansion of orchard areas in temperate states such as Himachal Pradesh and Jammu \& Kashmir,
+    \item adoption of high-density cultivation using dwarf rootstocks,
+    \item micro-irrigation systems that mitigate water stress,
+    \item diversification of cold-storage and processing infrastructure.
+\end{itemize}
+
+Despite climate warming, apple production has grown due to technological adaptation. However, this growth masks emerging challenges: declining winter chill accumulation is pushing apple cultivation to higher altitudes, reducing the suitability of mid-elevation orchards. This shift highlights how climate change silently alters the geography of high-value horticulture.
+
+\subsubsection{B.2. Niche Crop Constraints}
+
+Apricots present a contrasting case. Although area harvested has increased moderately, yields remain stagnant—barely rising from $27,586$ hg/ha in 1961 to $28,231$ hg/ha in 2018. This stagnation indicates a crop-specific climatic bottleneck.
+
+As a high-chill temperate fruit, Apricots require substantial winter chilling hours (typically 800–1200 hours of temperatures below 7°C) for proper floral induction and fruit set. Rising winter temperatures disrupt:
+
+\begin{itemize}
+    \item bud dormancy cycles,
+    \item uniform flowering,
+    \item fruit development duration,
+    \item pollination efficiency.
+\end{itemize}
+
+Additionally, fluctuations in late-winter temperatures cause:
+\begin{itemize}
+    \item early bud break, making flowers vulnerable to frost,
+    \item synchronization issues between flowering and pollinators,
+    \item increased pest pressures due to milder winters.
+\end{itemize}
+
+This suggests that climate change—not agronomic limitations—is increasingly constraining productivity. Regions like Ladakh and high-altitude Himachal Pradesh remain suitable, but mid-altitude zones are becoming marginal. Without targeted breeding programs for low-chill varieties, Apricot productivity is likely to continue stagnating or decline further.
+
+\subsubsection{B.3. Monsoon-Dependent Staples}
+
+Dry Beans, a major Kharif pulse, demonstrate both yield gains and high inter-annual volatility. Production increased from 1.68 million tonnes to 6.22 million tonnes, and yields improved from $2,577$ hg/ha to $4,181$ hg/ha. Yet, the crop exhibits dramatic year-to-year variation in area planted.
+
+This is strongly correlated with monsoon behavior:
+
+\begin{itemize}
+    \item timely monsoon onset encourages higher acreage,
+    \item delayed or weak monsoon leads to abandonment or shift to short-duration crops,
+    \item excessive early rainfall causes seedling mortality,
+    \item prolonged dry spells reduce pod formation.
+\end{itemize}
+
+Dry Beans represent the broader vulnerability of India’s 55\% rainfed agricultural land. Despite genetic improvements, adoption of improved varieties, and modest input intensification, monsoon variability continues to dominate yield outcomes.
+
+Furthermore, as temperatures rise, evapotranspiration increases, exacerbating moisture stress in rainfed regions. Dry Beans are particularly sensitive to water deficits during flowering and pod filling stages, where even a 10-day dry spell can cause yield declines of 20–30\%.
+
+\subsection{C. Comparative Agricultural Performance (1961 vs. 2018)}
+
+Table II provides a direct quantitative comparison of long-term trends across the crop basket, revealing clear patterns of diversification and market-driven transformation. The data shows:
+
+\begin{itemize}
+    \item horticultural crops dominate both area and production growth,
+    \item cereals show mixed trends, with wheat and rice rising while barley declines,
+    \item rainfed pulses continue to show volatility despite yield improvement,
+    \item plantation crops such as Areca Nut gain due to stable market demand.
+\end{itemize}
+
+These shifts underscore an agricultural transition in India—from low-value subsistence cereals to high-value horticulture and plantation crops—driven by profitability, consumer demand, and technological innovation. They also signal a gradual movement away from climate-vulnerable crops toward those supported by irrigation and market infrastructure.
+
+However, the transition is uneven. Smallholder farmers in semi-arid regions continue to depend on climate-sensitive pulses and oilseeds due to limited irrigation access, making them highly vulnerable to rainfall shocks.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{image.png}
+    \caption{The data confirms that the most dramatic growth occurred in high-value horticulture (Cabbages, Bananas, Apples). The reduction in Barley production ($36.8\%$ decline) stands out, emphasizing that land resource allocation is largely directed by profitability signals, fundamentally altering the country's crop landscape irrespective of climate suitability for the displaced crop.}
+    \label{fig:placeholder}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{WhatsApp Image 2025-11-14 at 12.00.15_ab1054fb.jpg}
+    \caption{Enter Caption}
+    \label{fig:placeholder}
+\end{figure}
+\section{Climate Sensitivity and Impact Modeling}
+
+Climate–crop interactions lie at the core of understanding agricultural vulnerability in India. By quantifying the strength and direction of relationships between seasonal climate indicators and crop yields, it becomes possible to identify which sectors are physiologically vulnerable, economically exposed, or buffered through technological and infrastructural adaptation. The long-term dataset (1961–2018) provides a statistically robust foundation for modeling these sensitivities and reveals how climate signals propagate into measurable agricultural outcomes across different crop categories.
+
+In particular, understanding climate sensitivity is essential because Indian agriculture is influenced not only by mean temperature and rainfall but also by their distribution, timing, and extreme events. Crops respond differently depending on their physiology, growth stage, and water-access environment. For example, cereals such as barley and wheat are highly sensitive to terminal heat, while pulses depend strongly on monsoon timing. Horticultural crops demonstrate complex, non-linear responses linked to chilling requirements, humidity conditions, and temperature thresholds. These factors make correlation analysis a powerful tool for identifying climate-induced vulnerabilities that remain hidden when analyzing long-term agricultural trends alone.
+
+\subsection{Correlation Matrix}
+
+The correlation matrix provides a visual and quantitative summary of climate–yield relationships across the eight crops analyzed. Strong patterns emerge when examining seasonal climate variables (winter temperatures, pre-monsoon temperatures, monsoon rainfall, and post-monsoon moisture availability). The analysis reveals both linear dependencies and hidden sensitivities that point to season-specific risks.
+
+Barley—an important Rabi cereal—exhibits the strongest climate sensitivity in the dataset. Its yield shows a significant negative correlation with Mar–May temperature ($r = -0.52$), indicating that even moderate pre-monsoon warming during the grain-filling period sharply reduces productivity. Elevated temperatures during this phase accelerate crop maturation, reduce grain weight, impair pollen viability, and exacerbate terminal heat stress. This aligns with agronomic studies that show Rabi cereals lose approximately 3–5\% yield for every $1^\circ$C increase in maximum temperature during the reproductive phase. Thus, the correlation is not only statistically significant but also biologically meaningful.
+
+Dry Beans, a major Kharif pulse grown predominantly in rainfed regions, show high dependency on monsoon rainfall ($r = 0.48$). Given that more than 90\% of Dry Beans are cultivated without irrigation, monsoon variability directly affects multiple agronomic processes including:
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{graph Image Nov 29, 2025, 08_16_15 PM.png}
+    \caption{Temperature chart}
+    \label{fig:placeholder}
+\end{figure}
+\begin{itemize}
+    \item sowing decisions and planting windows,
+    \item seedling establishment and root-zone moisture balance,
+    \item vegetative growth and branching intensity,
+    \item pod development and moisture availability,
+    \item disease incidence following extreme rainfall or humidity.
+\end{itemize}
+
+Dry Beans also display higher year-to-year volatility compared to cereals and horticultural crops due to the absence of irrigation buffers. Extreme rainfall events during flowering or pod formation can devastate yields, causing sharp inter-annual fluctuations. Thus, a correlation value of $0.48$ masks an underlying non-linear vulnerability.
+
+Moderate correlations were also observed for Apples and Green Beans with seasonal rainfall and temperatures, though these relationships are influenced by management practices, microclimatic variations, and the presence of supplemental irrigation.
+
+Apples, for instance, show moderate sensitivity to both winter temperatures and monsoon rainfall, reflecting the dual role of:
+\begin{itemize}
+    \item winter chill hours for flowering induction,
+    \item controlled irrigation or rainfall for fruit development.
+\end{itemize}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{image.png}
+    \caption{Correlation Matrix: Seasonal Climate Indicators vs. Crop Yields (1961–2018)}
+    \label{fig:placeholder}
+\end{figure}
+
+Beyond simple correlation values, the matrix highlights several important insights:
+
+\begin{itemize}
+    \item \textbf{Season-Specific Sensitivities:}  
+    Climate impacts differ across crop types depending on their temperature and moisture requirements. Rabi cereals show sensitivity to pre-monsoon heat, pulses to monsoon rainfall, and temperate fruits to winter temperatures—highlighting the need for seasonally targeted adaptation strategies.
+
+    \item \textbf{Non-Linear Threshold Effects:}  
+    Even crops with weak linear correlations may exhibit sharp yield declines if critical thresholds (e.g., maximum temperature during anthesis) are crossed. Such non-linearity becomes more common under climate extremes, meaning future risks may exceed what correlations suggest.
+
+    \item \textbf{Crop Categorization into Climate Vulnerability Clusters:}  
+    The analysis enables classification of crops into:
+    \begin{itemize}
+        \item heat-sensitive cereals (Barley, Wheat),
+        \item chill-dependent fruits (Apples, Apricots),
+        \item rainfall-dependent pulses (Dry Beans),
+        \item relatively resilient tropical crops (Bananas, Areca Nuts).
+    \end{itemize}
+    These clusters can serve as the basis for climate-smart zoning and targeted crop diversification policies.
+\end{itemize}
+
+Collectively, the correlation matrix functions as an early diagnostic tool, revealing which crop systems may face structural declines if climate trends intensify.
+
+\subsection{Sectoral Vulnerability}
+
+Sectoral vulnerability analysis identifies which crops are most at risk from projected climate trends, considering both physiological thresholds and adaptive capacity. Unlike general agricultural trend analysis, this approach focuses on stress points that may constrain future productivity regardless of technological improvement or market incentives.
+
+\textbf{Temperate Fruits (High Vulnerability)}  
+Temperate fruits—such as Apricots and Apples—display strong sensitivity to rising winter temperatures and reduced chill accumulation. Apricots, in particular, show near-stagnant yield growth, indicating that warming winter conditions are disrupting:
+\begin{itemize}
+    \item endodormancy and bud break timing,
+    \item uniform flowering and synchronization with pollinators,
+    \item fruit set and pollination success,
+    \item growing-degree day accumulation and fruit size potential.
+\end{itemize}
+Furthermore, winter warming increases susceptibility to frost damage because early bud break exposes flower buds to late-winter cold snaps. The migration of suitable chill zones to higher altitudes threatens long-term orchard viability in mid-altitude regions. This makes temperate horticulture one of the most climate-sensitive agricultural sectors in India.
+
+\textbf{Rabi Cereals (Moderate to High Vulnerability)}  
+Barley and wheat face increasing exposure to pre-monsoon heat stress. Rising Mar–May temperatures reduce grain-filling duration and increase sterility. Areas lacking access to supplemental irrigation are particularly vulnerable. Even in irrigated regions, high temperatures increase evapotranspiration demand, raising irrigation costs and stressing groundwater reserves. Future warming scenarios suggest that Rabi cereals may become marginal in low-elevation areas without heat-tolerant varieties.
+
+\textbf{Rainfed Kharif Pulses (High Vulnerability)}  
+Dry Beans, Pigeonpea, and other pulses are among the most climate-sensitive because they heavily depend on monsoon timing and distribution. Climate-induced delays in monsoon onset or mid-season dry spells significantly reduce yields. Pulses also respond poorly to waterlogging, making them vulnerable to intense rainfall bursts that damage root systems. Given that pulses contribute to India’s protein security, their vulnerability has nutritional and economic implications.
+
+\textbf{Tropical and Plantation Crops (Low Relative Vulnerability)}  
+Crops such as Bananas, Areca Nuts, and Coconuts exhibit resilience to rising temperatures due to:
+\begin{itemize}
+    \item perennial root systems accessing deeper soil moisture,
+    \item widespread adoption of micro-irrigation technologies,
+    \item broader temperature tolerance ranges,
+    \item significant technological improvements in nutrient and water management,
+    \item relatively stable year-round climatic environments in southern India.
+\end{itemize}
+
+These crops often benefit from stable market demand and higher profitability, enabling farmers to invest in protective infrastructure such as drip irrigation, fertigation, and shade nets. Their resilience does not imply immunity—cyclones, heat waves, and salinity intrusion can still cause damages—but overall vulnerability remains lower compared to temperate fruits and pulses.
+
+\textbf{Horticultural Vegetables (Mixed Vulnerability)}  
+Cabbages and Green Beans show moderate climate sensitivity. While their yields respond positively to improved irrigation and nutrients, they remain susceptible to:
+\begin{itemize}
+    \item excessive rainfall leading to pest outbreaks and fungal infections,
+    \item heat-induced stress during flowering and pod initiation,
+    \item waterlogging caused by short but intense rainfall events,
+    \item increased evapotranspiration affecting water-use efficiency.
+\end{itemize}
+
+The vulnerability of vegetables is compounded by their short growth cycles, meaning even brief climate anomalies can cause substantial yield reductions.
+
+Overall, the vulnerability assessment reveals that climate impacts are highly crop-specific and shaped by both biophysical limits and adaptive capacity. Rabi cereals and rainfed pulses emerge as the most exposure-prone, whereas plantation crops and irrigated horticulture show comparatively greater resilience. This underscores the importance of climate-smart diversification, targeted breeding programs, and investment in water-saving technologies.
+\section{Discussion and Policy Implications}
+
+The findings of this study highlight a complex interplay between climate dynamics, economic incentives, technological adoption, and long-term agricultural planning in India. While certain crop sectors have thrived due to technological innovation, improved irrigation, and market support, others are increasingly constrained by biophysical limits imposed by a changing climate. The evidence suggests that India’s agricultural system is undergoing a structural transition in which economic drivers continue to shape land-use decisions, but climatic thresholds increasingly determine actual productivity outcomes.
+
+\subsection{Economic vs. Climatic Drivers}
+
+A major conclusion emerging from the analysis is that agricultural land allocation in India has increasingly decoupled from climatic suitability. In contrast to traditional cropping patterns shaped by environmental compatibility, contemporary land-use decisions are primarily influenced by:
+\begin{itemize}
+    \item \textbf{crop profitability and market demand},
+    \item \textbf{access to government procurement systems and MSP policies},
+    \item \textbf{input subsidies for irrigation, power, and fertilizers},
+    \item \textbf{technological ease of cultivation enabled by modern inputs},
+    \item \textbf{supply-chain and cold storage infrastructure},
+    \item \textbf{policy incentives for high-value horticulture and export crops}.
+\end{itemize}
+
+These economic drivers have accelerated diversification towards crops such as Bananas, Apples, Cabbages, and Areca Nuts. However, they have also contributed to the contraction of traditional cereals such as Barley, which, despite being climatically suitable in many regions, has experienced reduced demand and diminished policy support. Thus, the displacement of Barley is better explained by market substitution rather than climate unsuitability, revealing a disconnect between land-use decisions and long-term sustainability.
+
+At the same time, climate impacts are becoming increasingly visible in the form of physiological limitations, yield plateaus, and heightened variability. Rising temperatures and erratic monsoon patterns directly affect:
+\begin{itemize}
+    \item reproductive processes (flowering, pollination, grain filling),
+    \item water demand and evapotranspiration rates,
+    \item synchronization between phenology and seasonal moisture availability,
+    \item pest, pathogen, and weed dynamics intensified by warm and humid conditions,
+    \item soil health deterioration due to erratic rainfall and nutrient leaching.
+\end{itemize}
+
+These climate-induced stresses manifest unevenly across crop systems:
+\begin{itemize}
+    \item \textbf{Temperate fruits} (Apricots, Apples) require winter chill and are highly sensitive to warming.
+    \item \textbf{Rabi cereals} (Barley, Wheat) suffer from terminal heat stress during March–May.
+    \item \textbf{Rainfed pulses} (Dry Beans, Pigeonpea) remain extremely vulnerable to monsoon vagaries.
+\end{itemize}
+
+Thus, while market forces largely dictate what farmers plant, climatic variability increasingly influences what can be sustainably produced. This emerging mismatch between economic incentives and agro-climatic realities represents a critical future challenge for Indian agriculture.
+
+\subsection{Policy Recommendations}
+
+Given the growing misalignment between market-driven cropping choices and climate-driven physiological constraints, a multi-tiered policy framework becomes essential for ensuring food security, stabilizing yields, and enabling long-term climate resilience. The following recommendations emerge from the analysis:
+
+\subsubsection{1) Strengthening Water Resilience}
+Decentralized water storage and recharge systems—such as farm ponds, percolation tanks, check-dams, micro-reservoirs, and village-level community tanks—are essential for buffering rainfall variability. Such interventions:
+\begin{itemize}
+    \item enhance groundwater recharge in over-extracted aquifers,
+    \item provide protective irrigation during critical crop stages,
+    \item reduce dependence on erratic monsoons,
+    \item sustain drip/micro-irrigation systems during short dry spells,
+    \item enhance water-use efficiency and crop productivity.
+\end{itemize}
+Decentralized systems also reduce climate risk more effectively than large-scale dams, which are costly, slow to build, and vulnerable to hydrological extremes.
+
+\subsubsection{2) Climate-Smart Breeding and Genetic Improvement}
+Breeding programs must prioritize traits that enhance resilience under warmer and more variable climates. This includes:
+\begin{itemize}
+    \item \textbf{heat-tolerant genotypes} capable of maintaining pollen viability,
+    \item \textbf{short-duration cultivars} that escape late-season heat,
+    \item \textbf{drought-resistant varieties} with deep root systems,
+    \item \textbf{disease-resistant lines} adaptable to changing pest cycles,
+    \item \textbf{low-chill horticultural varieties} for transitioning temperate regions.
+\end{itemize}
+Initiatives like NICRA and ICAR's mega-seed programs must be expanded to ensure rapid dissemination of climate-resilient seeds to smallholders.
+
+\subsubsection{3) Climate-Informed Zoning for Horticulture}
+Temperate horticulture is experiencing unprecedented stress due to declining winter chill accumulation. To prevent long-term productivity decline, climate zoning must:
+\begin{itemize}
+    \item identify regions where winter chill is projected to remain adequate,
+    \item guide orchard expansion toward higher altitudes with stable temperatures,
+    \item encourage low-chill or climate-resilient cultivars in mid-altitude zones,
+    \item support gradual relocation of orchards from vulnerable regions.
+\end{itemize}
+Zoning must be updated regularly using downscaled climate models, ensuring that farmers receive accurate guidance about long-term climate suitability.
+
+\subsubsection{4) Adaptive Crop Diversification}
+Crop diversification can reduce climate risk and enhance resilience. Strategies include:
+\begin{itemize}
+    \item promoting millets and sorghum in arid and semi-arid regions,
+    \item encouraging drought-tolerant pulses and oilseeds in rainfed zones,
+    \item developing market support for underutilized climate-resilient crops,
+    \item integrating intercropping and agroforestry systems to stabilize yields.
+\end{itemize}
+
+Diversification also has co-benefits for soil health, nutrition security, and carbon sequestration, making it a multi-dimensional climate adaptation strategy.
+
+\subsubsection{5) Digital Climate Advisory and Early-Warning Systems}
+Farmers increasingly require timely, localized, and actionable information. Digital climate advisory systems using mobile apps, satellite-based monitoring, and IoT sensors can:
+\begin{itemize}
+    \item optimize sowing and harvesting windows,
+    \item guide deficit irrigation based on real-time moisture data,
+    \item anticipate pest outbreaks linked to weather conditions,
+    \item alert farmers to heatwaves, cold spells, and extreme rainfall.
+\end{itemize}
+
+AI-driven advisory tools can integrate remote sensing, climate forecasts, and crop models to provide early warnings and improve decision-making at the farm level.
+
+\subsubsection{6) Enhancing Institutional and Financial Support}
+Institutional support is essential for bridging the adaptation gap faced by smallholder farmers. Key measures include:
+\begin{itemize}
+    \item improving coverage and efficiency of crop insurance schemes (PMFBY),
+    \item expanding credit access for climate-resilient technologies,
+    \item strengthening farmer-producer organizations (FPOs),
+    \item modernizing agricultural extension services,
+    \item developing incentives for water-saving technologies.
+\end{itemize}
+
+Risk-transfer mechanisms, such as weather-index insurance and parametric payouts, can also enhance financial resilience against climate-induced losses.
+
+\subsubsection{7) Integrating Climate Resilience into Agricultural Policy}
+Long-term agricultural planning must incorporate climate projections into:
+\begin{itemize}
+    \item MSP and procurement policies,
+    \item irrigation infrastructure planning,
+    \item horticulture mission strategies,
+    \item national seed mission priorities,
+    \item district-level cropping pattern recommendations.
+\end{itemize}
+
+Cross-sectoral coordination between agriculture, water resources, disaster management, and rural development ministries will be essential for building systemic resilience.
+
+\vspace{2mm}
+
+Taken together, these strategies can reduce both chronic (temperature-driven) and shock-related (rainfall-driven) climate risks, enabling a more resilient agricultural economy capable of withstanding future climatic uncertainties.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{graph Image Nov 29, 2025, 08_23_46 PM.png}
+    \caption{Annual Climate Trends}
+    \label{fig:placeholder}
+\end{figure}
+
+\section{Methodology}
+
+The methodological framework employed in this study integrates climate analytics, agricultural time-series evaluation, and climate–yield sensitivity modeling. The approach emphasizes both scientific rigor and practical relevance, ensuring that findings can inform policy, research, and on-ground adaptation strategies. The methodology combines descriptive statistics, temporal trend analysis, climate aggregation, correlation modeling, and vulnerability assessment to understand how long-term climatic shifts influence agricultural productivity in India.
+
+This section provides a comprehensive overview of data acquisition procedures, preprocessing steps, analytical tools, statistical models, and validation mechanisms undertaken during the study.
+
+\subsection{Overview of the Analytical Framework}
+The methodological pipeline was designed to systematically link climatic variability with observed agricultural outcomes across a 58-year period (1961–2018). The analysis integrates:
+\begin{itemize}
+    \item multi-decadal climate time-series data,
+    \item crop-specific agricultural indicators,
+    \item seasonal climate decomposition,
+    \item statistical modeling of climate–yield relationships,
+    \item sectoral vulnerability classification.
+\end{itemize}
+
+This integrated approach enables a holistic assessment of long-term climate impacts on diverse agricultural systems.
+
+\subsection{Data Sources and Acquisition}
+Two primary datasets were used:
+
+\subsubsection{1) Climate Data}
+Climate indicators—including monthly rainfall and seasonal maximum temperature—were sourced from:
+\begin{itemize}
+    \item FAO Climate Indicators Repository,
+    \item supplementary climate archives where available.
+\end{itemize}
+
+The dataset includes:
+\begin{itemize}
+    \item monthly rainfall (mm),
+    \item monthly mean temperature ($^\circ$C),
+    \item seasonally aggregated climate parameters for Winter, Pre-Monsoon, Monsoon, and Post-Monsoon.
+\end{itemize}
+
+\subsubsection{2) Agricultural Data}
+FAOSTAT provided long-term crop indicators for eight commodities:
+Apples, Apricots, Areca Nuts, Bananas, Barley, Dry Beans, Green Beans, and Cabbages.  
+For each crop, the following metrics were used:
+\begin{itemize}
+    \item Area Harvested (ha),
+    \item Yield (hg/ha),
+    \item Production (tonnes).
+\end{itemize}
+
+All datasets were synchronized on an annual basis for uniform comparison.
+
+\subsection{Data Cleaning and Harmonization}
+Before analysis, multiple preprocessing steps were applied to ensure internal consistency:
+
+\subsubsection{Unit Standardization}
+Yield values, originally expressed in hectograms per hectare ($\text{hg/ha}$), were converted to kilograms per hectare ($\text{kg/ha}$):  
+\[
+1 \, \text{hg/ha} = 0.1 \, \text{kg/ha}
+\]
+
+\subsubsection{Handling Missing Values}
+Occasional missing entries in climate or agricultural indices were addressed using:
+\begin{itemize}
+    \item linear interpolation for continuous time series,
+    \item imputation methods for FAOSTAT-estimated values,
+    \item exclusion of unreliable outliers tagged as ``Unofficial figure'' (*).
+\end{itemize}
+
+\subsubsection{Quality Flags}
+FAOSTAT records include flags such as:
+\begin{itemize}
+    \item (F) FAO estimate,
+    \item (Im) Imputation methodology,
+    \item (*) Unofficial figure.
+\end{itemize}
+
+Sensitivity checks ensured that results were not driven by these records.
+
+\subsection{Climate Aggregation and Seasonal Structuring}
+India's agricultural cycles are strongly governed by seasonality. To accurately capture climate–crop interactions, climate data was aggregated into four agriculturally meaningful seasons:
+
+\begin{itemize}
+    \item \textbf{Winter (Jan–Feb):} Influences chill-dependent crops such as Apples and Apricots.
+    \item \textbf{Pre-Monsoon (Mar–May):} Critical for Rabi cereals like Barley and Wheat; period of high heat stress.
+    \item \textbf{Monsoon (Jun–Sep):} Determines outcomes for Kharif crops, especially pulses such as Dry Beans.
+    \item \textbf{Post-Monsoon (Oct–Dec):} Transition period affecting soil moisture and residual crop growth.
+\end{itemize}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{graph_Generated_Image_um5oijum5oijum5o.png}
+    \caption{Methodology: Climate–Agriculture Analysis Pipeline}
+    \label{fig:placeholder}
+\end{figure}
+
+Seasonal aggregation was computed as:
+\[
+X_{\text{season}} = \frac{1}{n} \sum_{i=1}^{n} X_i
+\]
+where $n$ is number of months in the season.
+
+\subsection{Time-Series Analysis Techniques}
+
+Long-term climatic and agricultural trends were analyzed using established statistical tools. The key components included:
+
+\subsubsection{1) Coefficient of Variation (CV)}
+To assess temporal stability:
+\[
+CV = \frac{\sigma}{\mu} \times 100
+\]
+A low CV for temperature indicated stable but rising trends; a high CV for rainfall reflected strong inter-annual variability.
+
+\subsubsection{2) Trend Detection}
+Decadal trends were evaluated using:
+\begin{itemize}
+    \item moving averages,
+    \item linear regression slopes,
+    \item anomaly detection against long-term means.
+\end{itemize}
+
+\subsubsection{3) Volatility Assessment}
+Changes in rainfall variability were studied through:
+\begin{itemize}
+    \item range analysis (min–max),
+    \item extreme value identification,
+    \item seasonal consistency metrics.
+\end{itemize}
+
+\subsection{Agricultural Dynamics Evaluation}
+
+Trends in agricultural productivity (area, yield, production) were analyzed for each crop across 58 years.
+
+\subsubsection{1) Area Harvested Analysis}
+Long-term changes in cropping area were used to identify:
+\begin{itemize}
+    \item expansion of high-value crops,
+    \item displacement of traditional cereals,
+    \item market-driven cultivation patterns.
+\end{itemize}
+
+\subsubsection{2) Yield and Production Trends}
+Temporal yield changes were evaluated using:
+\begin{itemize}
+    \item year-on-year growth rates,
+    \item decadal averages,
+    \item comparison between 1961 vs. 2018 values.
+\end{itemize}
+
+Yield stagnation in crops like Apricots was linked to climatic constraints.
+
+\subsection{Climate–Yield Sensitivity Modeling}
+
+The relationship between climate variables and crop yields was evaluated using Pearson correlation coefficients:
+\[
+r = \frac{\sum (X_i - \bar{X})(Y_i - \bar{Y})}{\sqrt{\sum (X_i - \bar{X})^2} \sqrt{\sum (Y_i - \bar{Y})^2}}
+\]
+
+This approach enabled quantification of:
+\begin{itemize}
+    \item negative temperature effects on Rabi crops (e.g., Barley: $r = -0.52$),
+    \item rainfall dependency of pulses (Dry Beans: $r = 0.48$),
+    \item moderate temperature sensitivity in horticultural crops.
+\end{itemize}
+
+\subsection{Sectoral Vulnerability Assessment}
+
+Based on sensitivity modeling, crops were classified into vulnerability tiers:
+\begin{itemize}
+    \item \textbf{High vulnerability:} temperate fruits, rainfed pulses.
+    \item \textbf{Moderate vulnerability:} Rabi cereals exposed to heat.
+    \item \textbf{Low vulnerability:} plantation crops supported by irrigation.
+\end{itemize}
+
+This classification incorporated both climatic exposure and adaptive capacity.
+
+\subsection{Software and Computational Tools}
+All data processing and analysis were conducted using:
+\begin{itemize}
+    \item Python (NumPy, Pandas, Matplotlib) for numerical processing,
+    \item Excel for preliminary data formatting,
+    \item Jupyter Notebooks for iterative modeling,
+    \item LaTeX for documentation and visualization.
+\end{itemize}
+
+Version control was maintained using GitHub for reproducibility.
+
+\subsection{Limitations}
+Despite rigorous analysis, certain limitations remain:
+\begin{itemize}
+    \item FAOSTAT flags (F, Im, *) introduce uncertainty in select years,
+    \item district-level granularity was not available,
+    \item extreme event modeling (heat waves, flash floods) was outside the scope.
+\end{itemize}
+
+These limitations highlight areas for future refinement.
+
+\subsection{Methodological Workflow Summary}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\linewidth]{graph_Generated_Image_li7axali7axali7a.png}
+    \caption{Methodological Pipeline Illustrating Climate Data Processing, Crop Trend Analysis, and Climate–Yield Modeling}
+    \label{fig:placeholder}
+\end{figure}
+
+\section{Conclusion}
+
+\subsection{A. Summary of Long-Term Trends and Major Contributions}
+
+This expert-level technical analysis of long-term climatic and agricultural data (1961–2018) provides a robust and quantitative foundation for understanding India's evolving climate–agriculture interface. Across nearly six decades of evidence, several clear, policy-relevant, and scientifically validated conclusions emerge.
+
+\textbf{Climate Change Profile:}  
+The study confirms a systematic and statistically significant upward trend in India’s mean annual temperature, with the most rapid warming occurring during the pre-monsoon (Mar–May) season. This warming coincides with the reproductive and grain-filling stages of major Rabi crops such as Barley and Wheat, making this period one of the most critical climate risk windows. In contrast, rainfall does not display a consistent unidirectional trend; instead, the monsoon exhibits persistent high inter-annual variability. The coexistence of monotonic warming and volatile rainfall represents a structural climatic challenge that threatens India’s long-term water availability, cropping stability, and food security.
+
+\textbf{Decoupling Dynamics:}  
+A major contribution of this study is the empirical demonstration that agricultural land allocation in India has increasingly decoupled from climatic suitability. Farmers’ decisions are influenced more strongly by market profitability, procurement policies, and technological accessibility than by agro-climatic considerations. This explains the dramatic contraction of Barley—despite favorable climatic conditions—and the rapid expansion of high-value horticultural crops such as Bananas, Apples, and Areca Nuts. Such economic–climatic misalignment raises concerns about the long-term sustainability of cropping patterns under accelerating climate change.
+
+\textbf{Quantified Vulnerability:}  
+The analysis provides strong quantitative evidence that different crop sectors exhibit distinct climate sensitivities:
+\begin{itemize}
+    \item Rainfed pulses such as Dry Beans show high dependence on monsoon rainfall ($r = 0.48$), highlighting their exposure to variability in rainfall onset, intra-seasonal dry spells, and erratic distribution.
+    \item Rabi cereals such as Barley exhibit strong vulnerability to rising Mar–May temperatures ($r = -0.52$), confirming that terminal heat stress during grain formation remains a primary threat.
+    \item Temperate horticultural crops such as Apricots display stagnating yields and a negative correlation with winter temperatures ($r = -0.15$), indicating that warming winters are now breaching critical physiological thresholds such as chill accumulation.
+\end{itemize}
+
+These results demonstrate that climate change does not uniformly affect agriculture; the degree and nature of vulnerability are crop-specific and tightly linked to physiological thresholds, agro-ecological zones, and irrigation access.
+
+Taken together, the study contributes:
+\begin{itemize}
+    \item a multi-decade, harmonized climate–agriculture dataset,
+    \item empirical quantification of climate sensitivities across diverse crop groups,
+    \item identification of emerging vulnerabilities driven by warming and rainfall instability,
+    \item evidence-backed insights for climate-resilient agricultural planning and policy design.
+\end{itemize}
+
+\subsection{Future Research Directions}
+
+Although the present analysis establishes a strong foundation, future research must address the increasing complexity of climate–agriculture interactions in India. Several important avenues warrant further exploration:
+
+\subsubsection{1) Extreme Event Modeling}
+Current analyses rely primarily on seasonal means, but climate change is increasingly characterized by:
+\begin{itemize}
+    \item short-duration heatwaves,
+    \item sudden heavy rainfall events,
+    \item flash droughts,
+    \item prolonged mid-season dry spells.
+\end{itemize}
+These nonlinear and abrupt events have disproportionately large impacts on crop yields. Future research should incorporate:
+\begin{itemize}
+    \item heatwave indices (HWDI),
+    \item Standardized Precipitation Evapotranspiration Index (SPEI),
+    \item extreme rainfall thresholds,
+    \item crop-specific damage functions for extreme events.
+\end{itemize}
+
+\subsubsection{2) High-Resolution Spatial Analysis}
+District-level or block-level data would allow more granular insights into:
+\begin{itemize}
+    \item microclimatic variations,
+    \item soil moisture dynamics,
+    \item localized adaptation practices,
+    \item irrigation access disparities.
+\end{itemize}
+Such high-resolution analysis is essential for developing region-specific climate adaptation policies.
+
+\subsubsection{3) Machine Learning and Predictive Analytics}
+Advanced predictive models—using machine learning, remote sensing, and time-series forecasting—can enhance:
+\begin{itemize}
+    \item early-warning systems for climate shocks,
+    \item yield forecasting under future scenarios,
+    \item risk mapping for heat and rainfall stress.
+\end{itemize}
+
+\subsubsection{4) Integrating Socioeconomic and Behavioral Data}
+Farm-level decision-making is mediated by:
+\begin{itemize}
+    \item risk perceptions,
+    \item credit access,
+    \item labor availability,
+    \item knowledge of climate advisories.
+\end{itemize}
+Incorporating socioeconomic variables would provide a more realistic estimate of adaptation potential and barriers.
+
+\subsubsection{5) Evaluation of Adaptation Efficacy}
+There is a growing need to quantify which adaptation strategies are most effective, including:
+\begin{itemize}
+    \item micro-irrigation systems,
+    \item heat-tolerant crop varieties,
+    \item crop diversification,
+    \item water harvesting structures,
+    \item climate advisory platforms.
+\end{itemize}
+This will help policymakers prioritize interventions based on cost-efficiency and impact.
+
+\subsubsection{6) Projected Climate Suitability Mapping}
+Downscaled climate projections (e.g., CMIP6, SSP scenarios) should be used to map:
+\begin{itemize}
+    \item future suitability zones for major crops,
+    \item potential relocation of temperate fruit belts,
+    \item emerging climate hotspots,
+    \item risk zones for rainfed agriculture.
+\end{itemize}
+
+\vspace{3mm}
+
+In summary, future research must adopt interdisciplinary, high-resolution, and predictive approaches to address the accelerating climate risks identified in this study. Strengthening the scientific basis for climate-resilient agriculture will be crucial for safeguarding India’s food security and rural livelihoods in the decades ahead.
+
+
+\textbf{Extreme Event Modeling:}  
+Future work should shift from solely analyzing seasonal averages to explicitly modeling extreme climatic events—heat waves, cold spells, flash floods, and prolonged dry spells. These events often have disproportionate impacts on yield compared to mean climatic conditions. Non-linear statistical models, extreme value theory (EVT), and machine learning approaches (e.g., LSTM recurrent neural networks, Random Forest regression, and XGBoost-based anomaly detection) can help capture the sudden, asymmetric shocks increasingly observed after the year 2000.
+
+\textbf{High-Resolution Climate–Crop Modeling:}  
+District-level climate projections and crop simulations should be integrated to assess micro-regional vulnerability. Downscaled climate datasets (e.g., CORDEX-SA) can improve the accuracy of crop suitability zoning and adaptation planning.
+
+\textbf{Adaptation Cost and Feasibility Analysis:}  
+Future studies should quantify the economic feasibility of adaptation strategies, including irrigation infrastructure, heat-tolerant varieties, crop diversification, and risk transfer mechanisms such as insurance.
+
+\textbf{Remote Sensing and Real-Time Monitoring:}  
+Satellite-based vegetation indices (NDVI, EVI), soil moisture data (SMAP), and yield estimation models should be incorporated into early-warning systems. This would allow policymakers to monitor crop stress dynamically and allocate resources proactively.
+
+\textbf{Integration of Socioeconomic Factors:}  
+Climate impacts do not operate in isolation. Future research must integrate farmer livelihoods, market constraints, gendered impacts, and institutional support structures to create a holistic adaptation roadmap.
+
+In conclusion, a forward-looking research agenda—combining advanced climate analytics, machine learning, remote sensing, and socioeconomic assessment—will be critical in guiding India toward climate-resilient agriculture over the coming decades.
+
+\begin{thebibliography}{00}
+
+\bibitem{dst}
+Department of Science \& Technology, ``Climate Change and Agriculture in India,'' accessed Sep. 3, 2025. [Online]. Available: 
+\url{https://dst.gov.in/sites/default/files/Report_DST_CC_Agriculture.pdf}
+
+\bibitem{agecon}
+AgEcon Search, ``How Sensitive is Indian Agriculture to Climate Change?,'' accessed Sep. 3, 2025. [Online]. Available: 
+\url{https://ageconsearch.umn.edu/record/229948/files/07-Birthal-01-n%20-%20pgs%20474-487.pdf}
+
+\bibitem{ijfmr}
+IJFMR, ``Survey on the Impact of Climate Change on Plant Growth,'' accessed Sep. 3, 2025. [Online]. Available: 
+\url{https://www.ijfmr.com/papers/2025/1/37427.pdf}
+
+\bibitem{worldbank}
+World Bank, ``India: Climate Change Impacts,'' accessed Sep. 3, 2025. [Online]. Available: 
+\url{https://www.worldbank.org/en/news/feature/2013/06/19/india-climate-change-impacts}
+
+\bibitem{meta}
+ResearchGate, ``A meta-analysis of crop yield under climate change and adaptation,'' accessed Sep. 3, 2025. [Online]. Available: 
+\url{https://www.researchgate.net/publication/262687950_A_meta-analysis_of_crop_yield_under_climate_change_and_adaptation}
+
+\bibitem{ccagri}
+ResearchGate, ``Climate Change and Indian Agriculture: Impacts on Crop Yield,'' accessed Sep. 3, 2025. [Online]. Available: 
+\url{https://www.researchgate.net/publication/321786505_Climate_Change_and_Indian_Agriculture_Impacts_on_Crop_Yield}
+
+\bibitem{impactagri}
+ResearchGate, ``Impact of climate change on Indian agriculture,'' accessed Sep. 3, 2025. [Online]. Available: 
+\url{https://www.researchgate.net/publication/284658547_Impact_of_climate_change_on_Indian_agriculture}
+
+\bibitem{dse}
+Delhi School of Economics, ``The Impact of Climate Change on Indian Agriculture,'' accessed Sep. 3, 2025. [Online]. Available: 
+\url{http://econdse.org/wp-content/uploads/2014/04/guiteras_climate_change_indian_agriculture_sep_2009.pdf}
+
+\bibitem{isae}
+ISAE, ``Impact of Climate Change on Average Yields and their Variability of ...,'' accessed Sep. 3, 2025. [Online]. Available: 
+\url{https://isaeindia.org/wp-content/uploads/2020/11/03-Article-Raju-Mandal.pdf}
+
+\bibitem{stanford}
+Stanford Sustainability, ``Climate change cuts global crop yields, even when farmers adapt,'' accessed Sep. 3, 2025. [Online]. Available: 
+\url{https://sustainability.stanford.edu/news/climate-change-cuts-global-crop-yields-even-when-farmers-adapt}
+
+\bibitem{policyadapt}
+ResearchGate, ``Climate change adaptation: policy, practice and adaptation gaps in the agriculture sector in Bangladesh, India and Nepal,'' accessed Sep. 3, 2025. [Online]. Available: 
+\url{https://www.researchgate.net/publication/393280957_Climate_change_adaptation_policy_practice_and_adaptation_gaps_in_the_agriculture_sector_in_Bangladesh_India_and_Nepal}
+
+\bibitem{pib1}
+Press Information Bureau (PIB), ``Promotion of Climate-Resilient and Sustainable Farming,'' accessed Sep. 3, 2025. [Online]. Available: 
+\url{https://www.pib.gov.in/PressReleasePage.aspx?PRID=2151359}
+
+\bibitem{pib2}
+Press Information Bureau (PIB), ``Policies and Technological Innovations to Mitigate Impact of Climate Change,'' accessed Sep. 3, 2025. [Online]. Available: 
+\url{https://www.pib.gov.in/PressReleasePage.aspx?PRID=2040847}
+
+\bibitem{frontiers}
+Frontiers in Plant Science, ``Impact of climate change on agricultural production; Issues, challenges, and opportunities in Asia,'' accessed Sep. 3, 2025. [Online]. Available: 
+\url{https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2022.925548/full}
+
+\bibitem{mitigation}
+ResearchGate, ``Climate change adaptation and mitigation in Indian agriculture,'' accessed Sep. 3, 2025. [Online]. Available: 
+\url{https://www.researchgate.net/publication/381097204_Climate_change_adaptation_and_mitigation_in_Indian_agriculture}
+
+\end{thebibliography}
+
+
+\end{document}
